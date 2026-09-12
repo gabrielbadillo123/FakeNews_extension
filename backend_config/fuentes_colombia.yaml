@@ -1,0 +1,89 @@
+# fuentes_colombia.yaml
+# Pesos de fuentes para el Evidence Engine (feature/evidence-engine, Semana 6).
+# Los pesos van de 0.0 a 1.0 y reflejan la confiabilidad relativa de cada
+# fuente al ponderar el score de IA (score_IA). No implican que una fuente
+# sea infalible: incluso IFCN exige revisión metodológica caso por caso.
+#
+# Última verificación de vigencia de estas organizaciones: septiembre 2026.
+
+fact_checkers_colombia:
+  - id: colombiacheck
+    nombre: "ColombiaCheck"
+    url: "https://colombiacheck.com"
+    ambito: "nacional"
+    peso: 1.0
+    notas: >
+      Primer medio de fact-checking de Colombia (Consejo de Redacción).
+      Firmante del código de principios de IFCN. Referencia nacional.
+
+  - id: silla_vacia_detector
+    nombre: "La Silla Vacía — Detector de Mentiras"
+    url: "https://lasillavacia.com/detector-de-mentiras"
+    ambito: "nacional"
+    peso: 0.95
+    notas: >
+      Unidad de verificación especializada en figuras públicas y
+      contenido viral político.
+
+  - id: afp_factual
+    nombre: "AFP Factual"
+    url: "https://factual.afp.com"
+    ambito: "internacional (cobertura en español)"
+    peso: 0.9
+    notas: "Agencia internacional con protocolo de verificación en español."
+
+  - id: bbc_verifica
+    nombre: "BBC Mundo — Verificación"
+    url: "https://www.bbc.com/mundo"
+    ambito: "internacional (cobertura en español)"
+    peso: 0.85
+
+# Fuentes de referencia regional (no colombianas, pero relevantes para
+# contexto latinoamericano compartido, ej. migración, desinformación
+# transnacional). Peso reducido por no enfocarse en Colombia.
+fact_checkers_regionales:
+  - id: chequeado_ar
+    nombre: "Chequeado (Argentina)"
+    url: "https://chequeado.com"
+    peso: 0.6
+  - id: animal_politico_mx
+    nombre: "Animal Político — El Sabueso (México)"
+    url: "https://www.animalpolitico.com/elsabueso"
+    peso: 0.6
+
+# Medios de noticias colombianos "de referencia" — NO son verificadores,
+# pero se usan para contrastar si una afirmación aparece cubierta por
+# prensa establecida (señal débil, no reemplaza al fact-checker).
+medios_referencia:
+  - id: eltiempo
+    nombre: "El Tiempo"
+    url: "https://www.eltiempo.com"
+    peso: 0.4
+  - id: elespectador
+    nombre: "El Espectador"
+    url: "https://www.elespectador.com"
+    peso: 0.4
+  - id: semana
+    nombre: "Semana"
+    url: "https://www.semana.com"
+    peso: 0.35
+  - id: rcn
+    nombre: "RCN Radio / Noticias RCN"
+    url: "https://www.noticiasrcn.com"
+    peso: 0.35
+  - id: caracol
+    nombre: "Caracol Radio / Noticias Caracol"
+    url: "https://noticias.caracoltv.com"
+    peso: 0.35
+
+# Fuentes explícitamente excluidas o de baja confianza. El Evidence Engine
+# debe ignorarlas o marcarlas con advertencia si aparecen citadas como
+# respaldo de una afirmación.
+excluidas:
+  - motivo: "Sin política editorial de verificación conocida / alta tasa histórica de desinformación"
+    ejemplos: ["blogs anónimos", "cadenas de WhatsApp reenviadas sin fuente"]
+
+configuracion_motor:
+  timeout_por_fuente_ms: 4000
+  fallback_si_todas_fallan: "insuficiente"  # no debe tumbar el backend
+  umbral_minimo_fuentes_para_veredicto: 2
