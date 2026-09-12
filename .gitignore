@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Datos (nunca se redistribuye el texto de chequeos, ver ml/README_dataset_colombia.md)
+ml/data/raw/*.csv
+ml/data/raw/colombiacheck_cache/
+ml/data/processed/*.csv
+!ml/data/raw/sample_claims.csv
+# El split congelado SÍ se versiona (son solo índices, no texto):
+!ml/data/processed/split_seed42.json
+
+# Node / extensión
+node_modules/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Entorno
+.env
+*.log
+
+# Sistema
+.DS_Store
