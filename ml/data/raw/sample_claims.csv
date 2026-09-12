@@ -1,0 +1,16 @@
+claim_text,label,date_published,source_url
+"Un candidato a la alcaldía afirmó que redujo el desempleo en un 40% durante su gestión anterior",Falso,2025-03-12,https://example.org/sample/001
+"  Circula un video que muestra una inundación en Bogotá atribuida a una tormenta reciente  ",Cuestionable,2025-04-02,https://example.org/sample/002
+"Una entidad estatal publicó cifras oficiales de participación electoral del último censo",Verdadero,2025-01-20,https://example.org/sample/003
+"Se afirma que un ministerio eliminó un subsidio agrícola sin previo aviso",Falso,2025-05-15,https://example.org/sample/004
+"Una imagen viral muestra a un funcionario en una reunión que no ocurrió en la fecha señalada",Falso,2025-02-08,https://example.org/sample/005
+"Un partido político aseguró haber recolectado un millón de firmas para una consulta popular",Cuestionable,2025-06-01,https://example.org/sample/006
+"Un comunicado oficial confirma el aplazamiento de una jornada de votación regional",Verdadero,2025-03-30,https://example.org/sample/007
+"",Falso,2025-04-10,https://example.org/sample/008
+"Se afirma que un candidato renunció a su cargo, cuando en realidad continúa en funciones",Falso,2025-05-22,https://example.org/sample/009
+"Un audio atribuye declaraciones sobre reforma tributaria a un vocero que niega haberlas hecho",Cuestionable,2025-06-18,https://example.org/sample/010
+"Un candidato a la alcaldía afirmó que redujo el desempleo en un 40% durante su gestión anterior",Falso,2025-03-12,https://example.org/sample/001
+"Cifras de una encuesta electoral circulan sin ficha técnica ni casa encuestadora identificada",Cuestionable,2025-07-01,https://example.org/sample/011
+"Un video de archivo de una protesta de 2019 se presenta como si fuera de esta semana",Falso,2025-07-05,https://example.org/sample/012
+"Registraduría confirma el calendario oficial de elecciones regionales",Verdadero,2025-01-05,https://example.org/sample/013
+"Una cadena de WhatsApp asegura que se canceló el proceso de inscripción de cédulas",Falso,2025-02-14,https://example.org/sample/014

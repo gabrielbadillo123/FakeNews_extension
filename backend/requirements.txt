@@ -1,0 +1,11 @@
+# backend/requirements.txt — Semana 1 (bootstrap)
+# El backend completo (endpoints, modelo cargado, etc.) se construye en la
+# Semana 5 (feature/backend-api). Por ahora solo dejamos listo lo mínimo
+# para que la estructura del repo exista y "instale sin errores".
+
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.8.2
+python-dotenv==1.0.1
+pytest==8.2.2
+httpx==0.27.0

@@ -1,0 +1,11 @@
+# ml/requirements.txt — Semana 1 (bootstrap) + Semana 2 (limpieza/split)
+pandas==2.2.2
+scikit-learn==1.5.1
+pyyaml==6.0.1
+requests==2.32.3
+beautifulsoup4==4.12.3
+jupyter==1.0.0
+
+# Semana 3+ (Feature Extractor) — se activa cuando lleguemos ahí
+# spacy==3.7.5
+# es-core-news-sm  (modelo de spaCy en español, se instala aparte)
