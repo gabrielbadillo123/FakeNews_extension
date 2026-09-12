@@ -6,6 +6,7 @@ requests==2.32.3
 beautifulsoup4==4.12.3
 jupyter==1.0.0
 
-# Semana 3+ (Feature Extractor) — se activa cuando lleguemos ahí
-# spacy==3.7.5
-# es-core-news-sm  (modelo de spaCy en español, se instala aparte)
+# Semana 3 (Feature Extractor)
+spacy==3.8.16
+# Modelo en español: se instala aparte (usa release de GitHub, no PyPI)
+#   PIP_BREAK_SYSTEM_PACKAGES=1 python -m spacy download es_core_news_sm
