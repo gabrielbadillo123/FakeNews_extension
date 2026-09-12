@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "FakeNews Checker - Extractor",
+  "version": "0.1.0",
+  "description": "Extensión mínima (Sprint 1): lee título y URL de la página activa y los muestra en el side panel.",
+  "permissions": ["activeTab", "scripting", "sidePanel"],
+  "action": {
+    "default_title": "FakeNews Checker"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

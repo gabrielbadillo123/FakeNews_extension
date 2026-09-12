@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FakeNews Checker</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header>
+    <h1>FakeNews Checker</h1>
+    <p class="subtitle">Sprint 1 — Bootstrap de extensión</p>
+  </header>
+
+  <main>
+    <section id="state-loading" class="state">
+      <p>Leyendo página actual…</p>
+    </section>
+
+    <section id="state-error" class="state hidden">
+      <p class="error-text" id="error-text"></p>
+      <button id="retry-btn">Reintentar</button>
+    </section>
+
+    <section id="state-result" class="state hidden">
+      <div class="field">
+        <span class="label">Título</span>
+        <p id="page-title" class="value"></p>
+      </div>
+      <div class="field">
+        <span class="label">URL</span>
+        <p id="page-url" class="value"></p>
+      </div>
+      <div class="field">
+        <span class="label">Cuerpo extraído</span>
+        <p id="page-body" class="value body-preview"></p>
+      </div>
+      <div class="field">
+        <span class="label">Método de extracción</span>
+        <p id="extraction-method" class="value method-tag"></p>
+      </div>
+      <button id="refresh-btn">Actualizar</button>
+      <button id="use-selection-btn">Usar texto seleccionado</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Esta versión solo lee la página localmente. Aún no envía datos al backend.</p>
+  </footer>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
