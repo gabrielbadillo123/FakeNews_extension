@@ -40,6 +40,35 @@
       </div>
       <button id="refresh-btn">Actualizar</button>
       <button id="use-selection-btn">Usar texto seleccionado</button>
+      <hr class="divider" />
+      <button id="verify-btn" class="verify-btn">🔎 Verificar esta afirmación (mock)</button>
+    </section>
+
+    <section id="state-verify-loading" class="state hidden">
+      <p>Consultando el verificador (simulado)…</p>
+    </section>
+
+    <section id="state-verify-error" class="state hidden">
+      <p class="error-text" id="verify-error-text"></p>
+    </section>
+
+    <section id="state-verify-insuficiente" class="state hidden">
+      <p>No hay evidencia suficiente para dar un veredicto sobre esta afirmación.</p>
+    </section>
+
+    <section id="state-verify-result" class="state hidden">
+      <div class="field">
+        <span class="label">Veredicto</span>
+        <p id="verify-veredicto" class="value veredicto-tag"></p>
+      </div>
+      <div class="field">
+        <span class="label">Score / Confianza</span>
+        <p id="verify-score" class="value"></p>
+      </div>
+      <div class="field">
+        <span class="label">Fuentes consultadas</span>
+        <p id="verify-fuentes" class="value"></p>
+      </div>
     </section>
   </main>
 
@@ -47,6 +76,7 @@
     <p>Esta versión solo lee la página localmente. Aún no envía datos al backend.</p>
   </footer>
 
+  <script src="mock_api.js"></script>
   <script src="sidepanel.js"></script>
 </body>
 </html>
